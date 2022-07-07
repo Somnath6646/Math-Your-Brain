@@ -9,7 +9,7 @@ Math Your Brain is a math game built using Jetpack Compose and Modern MVVM Archi
 
 ***Try latest Math Your Brain app apk from below 👇***
 
-[![Math Your Brain](https://img.shields.io/badge/MYB-APK-black.svg?style=for-the-badge&logo=android)](https://github.com/Somnath6646/Math-Your-Brain/releases/download/APKRelease/myb-release.apk)
+[![Math Your Brain](https://img.shields.io/badge/MYB-APK-black.svg?style=for-the-badge&logo=android)](https://github.com/Somnath6646/Math-Your-Brain/releases/download/APKRelease/myb.apk)
 
 <br />
 
