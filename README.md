@@ -1,6 +1,6 @@
 
 
-![GitHub Cards Preview](https://github.com/Somnath6646/Math-Your-Brain/blob/main/myb-github-cover.png?raw=true)
+![GitHub Cards Preview](https://github.com/Somnath6646/Math-Your-Brain/blob/main/shot1.png?raw=true)
 
 # Math-Your-Brain
 Math Your Brain is a math game built using Jetpack Compose and Modern MVVM Architecture. I built this so that programmers learning Jetpack Compose Can use this repository as a learning material for Jetpack Compose. 
