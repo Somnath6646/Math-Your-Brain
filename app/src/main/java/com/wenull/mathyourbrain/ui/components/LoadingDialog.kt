@@ -30,7 +30,6 @@ import coil.compose.SubcomposeAsyncImageContent
 import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.rememberLottieComposition
-import com.wenull.mathyourbrain.ui.components.AlertDialog
 import com.wenull.mathyourbrain.ui.theme.AppFont
 import com.wenull.mathyourbrain.ui.theme.MemojiDialogTitle
 
@@ -61,66 +60,3 @@ fun Loader() {
 }
 
 
-
-
-@Composable
-fun MemojiSelector(links: List<String>, onClick:(String) -> Unit){
-
-    Dialog(onDismissRequest = {  }) {
-    Box(
-        modifier =  Modifier.clip(RoundedCornerShape(20.dp))){
-            var count = 0
-
-            if(links.isEmpty()) {
-
-            }else {
-            Column(){
-
-
-                Text("Choose your avatar", style = MemojiDialogTitle, modifier = Modifier
-                    .fillMaxWidth(1f)
-                    .padding(bottom = 25.dp), textAlign = TextAlign.Center)
-
-                    Row(horizontalArrangement = Arrangement.SpaceEvenly){
-                        for (i in 0..3) {
-                            Column(){
-                                for (j in 0..3) {
-                                    if(count<links.size) {
-                                        val link = links[count]
-                                        SubcomposeAsyncImage(
-                                            model = link,
-                                            contentDescription = "null",
-                                            modifier = Modifier
-                                                .size(100.dp)
-                                                .clickable {
-                                                    onClick(link)
-                                                }
-                                        ){
-                                            val state = painter.state
-                                            if (state is AsyncImagePainter.State.Loading || state is AsyncImagePainter.State.Error) {
-
-                                            } else {
-                                                SubcomposeAsyncImageContent()
-                                            }
-                                        }
-
-
-
-                                        count ++;
-                                    }
-                                }
-                            }
-
-
-                    }
-                }
-
-
-
-
-            }
-            }
-    }
-    }
-
-}
